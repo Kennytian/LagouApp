@@ -3,9 +3,9 @@
  */
 'use strict';
 
+import React,{ Component} from 'react';
 import React,{
-    Component,
-    Navigator,
+  Navigator,
 } from 'react-native';
 
 import Me from './views/me';
