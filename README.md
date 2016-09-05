@@ -19,9 +19,8 @@ react-native run-ios
 "dependencies": {
     "react": "15.3.1",
     "react-native": "0.32.0",
-    "react-native-router-flux": "^3.35.0",
-    "react-native-tab-navigator": "^0.3.3",
-    "react-native-viewpager": "^0.2.11"
+    "react-native-fabric": "^0.3.0",
+    "react-native-router-flux": "^3.35.0"
 }
 ```
 

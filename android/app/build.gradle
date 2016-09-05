@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply plugin: 'io.fabric'
 
 import com.android.build.OutputFile
 
@@ -126,6 +127,10 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-fabric')
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.2@aar') {
+         transitive = true;
+    }
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"
     compile "com.facebook.react:react-native:+"  // From node_modules

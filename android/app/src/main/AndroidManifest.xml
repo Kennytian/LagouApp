@@ -16,6 +16,7 @@
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
       android:theme="@style/AppTheme">
+      <meta-data android:name="io.fabric.ApiKey" android:value='d55aa2ee52b62b168e16dbf3d43aefb1ddd2583c'/>
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
