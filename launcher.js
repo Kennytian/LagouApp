@@ -6,7 +6,7 @@ import {
 import {Crashlytics} from 'react-native-fabric';
 import ErrorUtils from 'ErrorUtils'
 
-import Splash from './src/splash';
+import Splash from './src/pages/splash';
 
 class Launcher extends Component {
 	render() {

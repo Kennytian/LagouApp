@@ -5,10 +5,14 @@ import {
 } from 'react-native';
 import {Actions} from 'react-native-router-flux';
 
+//components
+import HomeHeader from './header';
+
 export default class Page1 extends Component {
 	render() {
 		return (
-			<View style={{margin: 128}}>
+			<View>
+				<HomeHeader/>
 				<Text onPress={Actions.tab2}>This is PageOne!</Text>
 			</View>
 		)

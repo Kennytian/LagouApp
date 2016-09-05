@@ -1,2 +1,0 @@
-pod 'Fabric'
-pod 'Crashlytics'

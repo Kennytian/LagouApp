@@ -4,7 +4,7 @@ import {
 	Image
 } from 'react-native';
 
-import Frame from './frame';
+import Router from './router';
 
 export default class Splash extends Component {
 	constructor(props) {
@@ -22,15 +22,15 @@ export default class Splash extends Component {
 		let {navigator} = this.props;
 		if (navigator) {
 			navigator.replace({
-				name: 'frame',
-				component: Frame
+				name: 'router',
+				component: Router
 			})
 		}
 	}
 
 	render() {
 		return (
-			<Image source={require('./images/hello_page_bg.png')} style={styles.backgroundImage}/>
+			<Image source={require('./../images/hello_page_bg.png')} style={styles.backgroundImage}/>
 		)
 	}
 
