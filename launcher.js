@@ -4,7 +4,7 @@ import {
 	Navigator
 } from 'react-native';
 import {Crashlytics} from 'react-native-fabric';
-import ErrorUtils from 'ErrorUtils'
+import ErrorUtils from 'ErrorUtils';
 
 import Splash from './src/pages/splash';
 
@@ -21,17 +21,17 @@ class Launcher extends Component {
 			/>
 		)
 	}
-	
+
 	componentDidMount() {
 		this._fabricInit();
 	}
-	
+
 	_fabricInit() {
 		ErrorUtils.setGlobalHandler(err => {
 				if (__DEV__) {
+					Crashlytics.recordError(err);
 					console.warn(err);
 				}
-				Crashlytics.recordError(err)
 			}
 		)
 	}
