@@ -9,7 +9,7 @@
     "react": "15.3.1",
     "react-native": "0.35.0",
     "react-native-fabric": "^0.3.0",
-    "react-native-instabug": "0.0.4",
-    "react-native-router-flux": "^3.35.0"
+    "react-native-instabug": "^0.2.8",
+    "react-native-router-flux": "^3.36.0"
   }
 }
