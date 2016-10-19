@@ -25,7 +25,8 @@ export const NavigationStyle = {
     fontWeight: 'normal',
   },
   view: {
-    borderBottomWidth: 0.1,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderColor: '#E1E1E1',
     backgroundColor: "#FFF",
     ...Platform.select({
       ios: {},
