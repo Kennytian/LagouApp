@@ -4,7 +4,7 @@ import {
 	Image
 } from 'react-native';
 
-import Router from './router';
+import RootRouter from './rootRouter';
 
 export default class Splash extends Component {
 	constructor(props) {
@@ -15,15 +15,15 @@ export default class Splash extends Component {
 	componentDidMount() {
 		this.timer = setTimeout(() => {
 			this._navigateToFrame()
-		}, 2000);
+		}, 20);
 	}
 
 	_navigateToFrame() {
 		let {navigator} = this.props;
 		if (navigator) {
 			navigator.replace({
-				name: 'router',
-				component: Router
+				name: 'rootRouter',
+				component: RootRouter
 			})
 		}
 	}

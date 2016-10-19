@@ -3,6 +3,7 @@ package com.lagouapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.kenny.instabug.InstabugPackage;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -34,7 +35,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new FabricPackage(),
-          new MainReactPackage()
+          new MainReactPackage(),
+          new InstabugPackage("dd90b37e48964a4c7324ecb686faf06b", MainApplication.this)
       );
     }
   };

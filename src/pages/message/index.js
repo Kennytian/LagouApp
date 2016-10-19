@@ -10,7 +10,7 @@ import {Actions} from 'react-native-router-flux';
 export default class MessageIndex extends Component {
 	render() {
 		return (
-			<ScrollView style={{flex:1}}>
+			<ScrollView style={{flex:1, marginTop:40}}>
 				<View style={styles.container}>
 					<Text style={styles.welcome}>
 						Welcome to Page2 {this.props.title}

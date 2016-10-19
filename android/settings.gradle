@@ -1,5 +1,7 @@
 rootProject.name = 'LagouApp'
 
 include ':app'
+include ':react-native-instabug'
+project(':react-native-instabug').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-instabug/android')
 include ':react-native-fabric'
 project(':react-native-fabric').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fabric/android')
