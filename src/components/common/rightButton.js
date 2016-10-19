@@ -1,11 +1,18 @@
-import React, { Component } from 'react'
-import { Text, View, Platform, Dimensions } from 'react-native'
+import React, {Component} from 'react';
+import {Text, View, Image} from 'react-native';
+import {imageSource} from './../../utils/imageSource';
 
 export function rightButton() {
-	return (
-		<View style={{flexDirection: 'row'}}>
-			<Text style={{marginRight: 10}}>收藏</Text>
-			<Text>分享</Text>
-		</View>
-	);
+  let style = {
+    marginRight: 15,
+    width: 20,
+    height: 20
+  };
+
+  return (
+    <View style={{flexDirection: 'row'}}>
+      <Image style={style} resizeMode={Image.resizeMode.contain} source={imageSource.icon_fav_empty}/>
+      <Image style={[style, {marginRight: 5}]} resizeMode={Image.resizeMode.contain} source={imageSource.icon_share}/>
+    </View>
+  );
 }

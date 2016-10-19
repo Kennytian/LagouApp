@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-
-import {
-	Image
-} from 'react-native';
+import {Image} from 'react-native';
 
 import RootRouter from './rootRouter';
+import  {imageSource} from './../utils/imageSource';
 
 export default class Splash extends Component {
 	constructor(props) {
@@ -30,7 +28,7 @@ export default class Splash extends Component {
 
 	render() {
 		return (
-			<Image source={require('./../images/hello_page_bg.png')} style={styles.backgroundImage}/>
+			<Image source={imageSource.hello_page_bg} style={styles.backgroundImage}/>
 		)
 	}
 
