@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "lint":"eslint --ext .js ./src"
   },
   "dependencies": {
     "react": "15.3.1",
@@ -11,5 +12,12 @@
     "react-native-fabric": "^0.3.0",
     "react-native-instabug": "^0.2.8",
     "react-native-router-flux": "^3.36.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1"
   }
 }
